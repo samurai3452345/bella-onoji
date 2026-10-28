@@ -1,0 +1,35 @@
+.form-field {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.form-field > span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 9px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    border-radius: 0;
+    padding: 9px 0 12px;
+    font-size: 16px;
+    min-height: 44px;
+    color: #111;
+}
+
+.form-field input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: var(--orange);
+}

@@ -1,0 +1,15 @@
+.icon {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.paypal-mark {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+}

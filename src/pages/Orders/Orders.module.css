@@ -1,0 +1,44 @@
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    padding: 20px 15px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.order-card > div {
+    flex: 1;
+}
+
+.order-card strong {
+    font-size: 12px;
+}
+
+.order-card p {
+    font-size: 10px;
+    color: #888;
+    margin: 6px 0;
+}
+
+.order-icon {
+    color: var(--orange);
+}
+
+.status-pill {
+    font-size: 9px;
+    padding: 4px 7px;
+    background: #fff0e9;
+    border-radius: 8px;
+    color: var(--orange);
+    display: inline-block;
+    margin-top: 5px;
+}

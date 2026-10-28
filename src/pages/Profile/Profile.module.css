@@ -1,0 +1,26 @@
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.profile-links a {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: white;
+    border-radius: 18px;
+    padding: 15px 22px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile-links a:hover {
+    background: #ffede6;
+}
+
+.profile-note {
+    margin: 25px 0 0;
+}

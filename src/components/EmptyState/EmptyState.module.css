@@ -1,0 +1,46 @@
+.empty-state {
+    min-height: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 12px;
+}
+
+.empty-state > .icon {
+    color: #c8c8ca;
+    opacity: 0.6;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.empty-state h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    max-width: 330px;
+}
+
+.empty-state p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888;
+    max-width: 290px;
+    margin-bottom: 32px;
+}
+
+.empty-state .primary-button {
+    margin-top: auto;
+}
+
+.empty-state:has(.primary-button) {
+    padding-top: 80px;
+}
+
+.empty-state h2 {
+    font-family: var(--app-rounded);
+}

@@ -1,0 +1,11 @@
+.bottom-action {
+    margin-top: auto;
+    padding-top: 26px;
+    padding-bottom: 12px;
+}
+
+@media (max-width: 700px) {
+    .bottom-action {
+        padding-bottom: max(18px, env(safe-area-inset-bottom));
+    }
+}

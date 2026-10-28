@@ -1,0 +1,40 @@
+.food-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 35% 30%, #fff, #fff0 65%), #ffe8b6;
+}
+
+.food-illustration > span {
+    font-size: 72px;
+    filter: drop-shadow(0 10px 12px #bb781b33);
+}
+
+.food-illustration.berry {
+    background-color: #e9defa;
+}
+
+.food-illustration.snack {
+    background-color: #fff0ce;
+}
+
+.food-illustration.sauce {
+    background-color: #ffded4;
+}
+
+.food-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.food-image > img {
+    position: absolute;
+    width: 168.2%;
+    height: 111.56%;
+    left: -34.1%;
+    top: -5.78%;
+    object-fit: cover;
+    max-width: none;
+}

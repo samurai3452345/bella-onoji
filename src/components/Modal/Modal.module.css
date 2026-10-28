@@ -1,0 +1,149 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #0008;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fade-in 0.2s ease;
+}
+.modal {
+  width: 440px;
+  max-width: 100%;
+  max-height: 90dvh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 30px;
+  padding: 28px;
+  box-shadow: 0 30px 100px #0003;
+  outline: none;
+}
+.modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.modal-heading h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+}
+.modal-heading .icon-button {
+  margin-right: -10px;
+}
+.modal-description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 0 0 25px;
+}
+.dialog-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+.dialog-actions .primary-button {
+  min-height: 56px;
+  padding: 14px 18px;
+  font-size: 14px;
+}
+.dialog-actions .subtle-button {
+  flex-shrink: 0;
+}
+.fee-table p {
+  border-bottom: 1px solid #ddd;
+  padding: 13px 0 19px;
+  margin: 0 0 8px;
+}
+.fee-table span {
+  font-size: 11px;
+  color: #888;
+  display: block;
+  margin-bottom: 7px;
+}
+.fee-table strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.fee-explanation {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 390px) {
+  .modal {
+    padding: 24px;
+  }
+}
+@media (max-width: 390px) {
+  .modal-backdrop {
+    padding: 16px;
+  }
+}
+.fees-modal {
+  width: 315px;
+  min-height: 322px;
+  padding: 0;
+  font-family: 'SF Pro Text', 'Nunito', sans-serif;
+}
+.fees-modal .modal-heading {
+  min-height: 66px;
+  padding: 15px 44px;
+  background: #ededed;
+  margin-bottom: 0;
+}
+.fees-modal .modal-heading h2 {
+  font-family: var(--app-rounded);
+  font-size: 20px;
+  font-weight: 700;
+}
+.fees-modal .fee-table {
+  padding: 12px 36px 0;
+}
+.fees-modal .fee-table p {
+  padding: 10px 0 15px;
+  margin: 0 0 5px;
+}
+.fees-modal .fee-table p:last-child {
+  border: 0;
+  padding-bottom: 3px;
+}
+.fees-modal .fee-table strong {
+  font-size: 17px;
+  line-height: 1.4;
+}
+.fees-modal .fee-explanation {
+  display: none;
+}
+.fees-modal > .fine-print {
+  margin: 8px 36px 0;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.fees-modal .dialog-actions {
+  margin: 12px 18px 17px;
+  gap: 12px;
+}
+.fees-modal .dialog-actions .primary-button {
+  min-height: 50px;
+  font-size: 16px;
+  padding: 12px 22px;
+}
+.fees-modal .dialog-actions .subtle-button {
+  font-size: 15px;
+  padding-inline: 12px;
+}

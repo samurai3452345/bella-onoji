@@ -1,0 +1,18 @@
+.brand-logo {
+    display: block;
+    position: relative;
+    width: 206px;
+    height: 102px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.brand-logo img {
+    position: absolute;
+    width: 138.5%;
+    height: 135.56%;
+    max-width: none;
+    left: -20.13%;
+    top: -5.56%;
+    object-fit: cover;
+}

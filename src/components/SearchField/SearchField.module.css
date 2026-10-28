@@ -1,0 +1,28 @@
+.food-search {
+    border-radius: 30px;
+    background: #efeeee;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px 10px 24px;
+}
+
+.food-search input {
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 6px 0;
+    color: #111;
+    outline-offset: 2px;
+}
+
+.food-search button {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #666;
+}

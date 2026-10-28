@@ -1,0 +1,283 @@
+.ordering-site {
+    /* Expand into the right margin while keeping the panel's left edge in place. */
+    --order-panel-growth: clamp(0px, calc((100vw - 1026px) / 2), 124.2px);
+    min-height: 100dvh;
+    background: #edeae5;
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+    gap: 110px;
+    color: #111;
+    font-family: Arial, 'Segoe UI', sans-serif;
+}
+
+.order-desktop-intro {
+    width: 430px;
+    position: sticky;
+    top: 36px;
+    height: calc(100dvh - 72px);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-desktop-intro .brand-logo {
+    margin-left: -25px;
+}
+
+.order-desktop-intro h2 {
+    font: 700 64px/1.1 Poppins,
+    Montserrat,
+    sans-serif;
+    letter-spacing: -2px;
+    margin: 18px 0 22px;
+}
+
+.order-desktop-intro > div > p:not(.feature-label) {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #777;
+}
+
+.order-desktop-intro .feature-label {
+    font: 600 14px Montserrat,
+    sans-serif;
+}
+
+.intro-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--orange);
+    display: block;
+    margin: 32px 0;
+}
+
+.order-desktop-intro .text-link {
+    font: 500 13px Montserrat,
+    sans-serif;
+}
+
+.intro-bottom {
+    font: 600 10px Montserrat,
+    sans-serif;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.order-device {
+    position: relative;
+    width: calc(414px + var(--order-panel-growth));
+    margin-right: calc(-1 * var(--order-panel-growth));
+    flex-shrink: 0;
+    min-height: 896px;
+    background: var(--app);
+    border-radius: 30px;
+    box-shadow: 0 20px 80px #463b2b16;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.website-bar {
+    min-height: 32px;
+    background: #fff5ef;
+    padding: 9px 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ac410f;
+}
+
+.website-bar > a {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 9px;
+    letter-spacing: 0;
+}
+
+.order-main {
+    padding: 12px 50px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    min-width: 0;
+}
+
+.catalogue-page {
+    padding-top: 13px;
+    padding-bottom: 0;
+}
+
+.listing-page {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.product-page {
+    padding-top: 0;
+}
+
+.storage-warning {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 12px 25px;
+    background: #fff4d6;
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .ordering-site {
+        --order-panel-growth: clamp(0px, calc((100vw - 866px) / 2), 124.2px);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .order-desktop-intro {
+        width: 330px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .order-desktop-intro h2 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 850px) {
+    .ordering-site {
+        --order-panel-growth: clamp(0px, calc((100vw - 744px) / 2), 124.2px);
+        padding: 20px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .order-desktop-intro {
+        width: 260px;
+    }
+}
+
+@media (max-width: 850px) {
+    .order-desktop-intro h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 850px) {
+    .order-desktop-intro .brand-logo {
+        width: 165px;
+        height: 82px;
+    }
+}
+
+@media (max-width: 850px) {
+    .order-desktop-intro > div > p:not(.feature-label) {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .intro-bottom {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    .ordering-site {
+        padding: 0;
+        background: var(--app);
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .order-desktop-intro {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .order-device {
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100dvh;
+    }
+}
+
+@media (max-width: 700px) {
+    .order-main {
+        min-height: calc(100dvh - 207px);
+    }
+}
+
+@media (max-width: 390px) {
+    .order-main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    .catalogue-page {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 390px) {
+    .listing-page {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+.ordering-site {
+    font-family: 'SF Pro Text', 'Nunito', 'Segoe UI', sans-serif;
+}
+
+.order-device {
+    background: var(--orange);
+}
+
+.order-canvas {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background: var(--app);
+    min-height: inherit;
+    width: 100%;
+    transform-origin: 50% 50%;
+    transition: transform 0.4s cubic-bezier(0.2, 0.75, 0.2, 1),
+    border-radius 0.4s,
+    box-shadow 0.4s;
+}
+
+.order-device.drawer-open .order-canvas {
+    transform: translateX(48%) scale(0.72);
+    border-radius: 30px;
+    overflow: clip;
+    box-shadow: -18px 18px 0 #ff865b;
+}
+
+.order-device.drawer-open .app-drawer {
+    z-index: 3;
+    background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .order-canvas {
+        transition: none;
+    }
+}

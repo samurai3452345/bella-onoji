@@ -1,0 +1,128 @@
+.welcome-screen {
+    background: #ff4b3a;
+    color: white;
+    min-height: 864px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-logo {
+    display: block;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background: white;
+    padding: 12px;
+}
+
+.welcome-logo .brand-logo {
+    width: 49px;
+    height: 49px;
+}
+
+.welcome-logo .brand-logo img {
+    object-fit: contain;
+}
+
+.welcome-screen h1 {
+    font: 700 59px/0.98 Poppins,
+    sans-serif;
+    letter-spacing: -3px;
+    position: relative;
+    z-index: 2;
+    margin: 45px 0 20px;
+}
+
+.welcome-characters {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 450px;
+    top: 310px;
+}
+
+.welcome-characters img {
+    position: absolute;
+    object-fit: contain;
+    max-width: none;
+}
+
+.character-one {
+    width: 360px;
+    height: 435px;
+    left: -82px;
+    top: 20px;
+    z-index: 1;
+}
+
+.character-two {
+    width: 265px;
+    height: 329px;
+    left: 238px;
+    top: 95px;
+}
+
+.welcome-characters:after {
+    content: '';
+    position: absolute;
+    inset: 300px 0 -40px;
+    background: linear-gradient(transparent, #ff4b3a);
+    z-index: 2;
+}
+
+.welcome-actions {
+    position: relative;
+    z-index: 3;
+    margin-top: auto;
+}
+
+.welcome-actions .primary-button {
+    background: #fff;
+    color: var(--orange);
+}
+
+.welcome-actions > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .welcome-screen {
+        min-height: calc(100dvh - 32px);
+    }
+}
+
+@media (max-width: 390px) {
+    .welcome-screen {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 390px) {
+    .welcome-screen h1 {
+        font-size: 54px;
+    }
+}
+
+.welcome-screen h1 {
+    font-family: var(--app-rounded);
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 0.87;
+    letter-spacing: -1.8px;
+}
+
+@media (max-width: 390px) {
+    .welcome-screen h1 {
+        font-size: 59px;
+    }
+}

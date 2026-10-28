@@ -1,0 +1,447 @@
+.landing {
+    overflow: clip;
+    padding-top: var(--site-header-height);
+}
+
+.landing-hero {
+    height: 674px;
+    background: linear-gradient(#17101099, #17101099),
+    var(--hero-image) center top/cover no-repeat;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1060px;
+    margin: auto;
+    padding: 69px 24px 0;
+}
+
+.eyebrow {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font: 700 58px/80px Poppins,
+    Montserrat,
+    sans-serif;
+    letter-spacing: 0.2px;
+    margin: 0 0 10px;
+}
+
+.hero-description {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+    margin: 10px 0 44px;
+}
+
+.phone-showcase {
+    position: relative;
+    z-index: 1;
+    width: 548px;
+    height: 769px;
+    margin: -220px auto 0;
+}
+
+.phone-front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 299px;
+    height: 586px;
+    filter: drop-shadow(25px 20px 40px #2e040425);
+}
+
+.phone-back {
+    position: absolute;
+    left: 263px;
+    top: 109px;
+    width: 285px;
+    height: 531px;
+}
+
+.phone-front,
+.phone-back {
+    overflow: hidden;
+}
+
+.phone-front img {
+    position: absolute;
+    width: 219.57%;
+    height: 100.05%;
+    left: -57.28%;
+    top: -0.03%;
+    max-width: none;
+}
+
+.phone-back img {
+    position: absolute;
+    width: 230.58%;
+    height: 110.56%;
+    left: -66.92%;
+    top: -6.22%;
+    max-width: none;
+}
+
+.how-heading {
+    border-top: 3px solid #e4e4e4;
+    max-width: 884px;
+    margin: auto;
+    padding: 68px 0 38px;
+    text-align: center;
+}
+
+.how-heading h2 {
+    font: 600 44px/1.25 Poppins,
+    Montserrat,
+    sans-serif;
+    margin: 0;
+    color: #111;
+}
+
+.download-section {
+    min-height: 509px;
+    background: linear-gradient(#252b4266, #252b4266),
+    var(--download-image) center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 125px 24px 45px;
+}
+
+.download-section h2 {
+    font-size: 40px;
+    line-height: 57px;
+    margin-bottom: 15px;
+}
+
+.download-section > p {
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0 0 40px;
+    font-weight: 500;
+}
+
+.browser-demo-link {
+    margin: 24px auto 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.faq-section {
+    max-width: 1210px;
+    margin: auto;
+    padding: 110px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+}
+
+.faq-section h2 {
+    font: 700 40px/1.3 Poppins,
+    Montserrat,
+    sans-serif;
+    margin: 15px 0 28px;
+}
+
+.faq-section .feature-label {
+    font-size: 16px;
+}
+
+.faq-list details {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+}
+
+.faq-list summary {
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 1.6;
+    list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary span {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.faq-list details[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-list details p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin: 18px 30px 0 0;
+}
+
+@media (min-width: 1600px) {
+    .landing-hero {
+        background-position: center 48%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero-content h1 {
+        font-size: 50px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 850px) {
+    .faq-section {
+        gap: 40px;
+        padding: 80px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-hero {
+        height: 778px;
+        background: #fafafa;
+        color: var(--ink);
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-content {
+        padding: 50px 16px 0;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .eyebrow {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--muted);
+        margin-bottom: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font: 700 36px/42.5px Montserrat,
+        sans-serif;
+        letter-spacing: 0.2px;
+        margin: 0 auto 20px;
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 767px) {
+    .desktop-break {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-description {
+        font-size: 24px;
+        line-height: 38px;
+        color: var(--muted);
+        max-width: 330px;
+        margin: 0 auto 44px;
+    }
+}
+
+@media (max-width: 767px) {
+    .phone-showcase {
+        width: 422px;
+        height: 608px;
+        margin-top: -231px;
+        left: 50%;
+        margin-left: -211px;
+        margin-right: 0;
+        transform: scale(0.99);
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 767px) {
+    .phone-front {
+        width: 230px;
+        height: 451px;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .phone-back {
+        width: 219px;
+        height: 408px;
+        left: 203px;
+        top: 84px;
+    }
+}
+
+@media (max-width: 767px) {
+    .how-heading {
+        border-top: 0;
+        position: relative;
+        padding: 0 16px 108px;
+        max-width: 414px;
+    }
+}
+
+@media (max-width: 767px) {
+    .how-heading:after {
+        content: '';
+        position: absolute;
+        top: 85px;
+        height: 3px;
+        left: 0;
+        right: 0;
+        background: #e4e4e4;
+    }
+}
+
+@media (max-width: 767px) {
+    .how-heading h2 {
+        font: 600 24px/36px Montserrat,
+        sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-section {
+        min-height: 564px;
+        background: var(--ink);
+        padding: 105px 24px 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-section h2 {
+        font-size: 40px;
+        line-height: 57px;
+        max-width: 330px;
+        margin: 0 auto 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .download-section > p {
+        font-size: 22px;
+        line-height: 36px;
+        color: #bdbdbd;
+        max-width: 310px;
+        margin: 0 auto 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .browser-demo-link {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-section {
+        padding: 75px 25px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-section h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-section .feature-label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-list details {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-list summary {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-list details p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-description {
+        font-size: 21px;
+        line-height: 35px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 390px) {
+    .phone-showcase {
+        transform: scale(0.88);
+        height: 550px;
+    }
+}
+
+@media (max-width: 390px) {
+    .how-heading {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 390px) {
+    .download-section {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+    .download-section h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .landing-hero {
+        background-size: 100% 619px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+}

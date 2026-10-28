@@ -1,0 +1,54 @@
+.address-card {
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 38px;
+    line-height: 1.5;
+}
+
+.address-card strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.address-card p {
+    padding-top: 7px;
+    border-top: 1px solid #eee;
+    margin: 7px 0;
+}
+
+.region-tag {
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background: #fff3ed;
+    color: var(--orange);
+    font-size: 11px;
+}
+
+.payment-notice {
+    margin: -18px 0 30px;
+}
+
+.checkout-totals {
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.checkout-totals p {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #888;
+    margin: 14px 0;
+}
+
+.checkout-totals p.total {
+    font-size: 21px;
+    color: #111;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 22px;
+}

@@ -1,0 +1,33 @@
+.help-content > p:not(.demo-label) {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+    margin: 0 0 25px;
+}
+
+.help-content details {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.help-content summary {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.help-content details p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777;
+    margin: 15px 0 0;
+}
+
+.help-content > .primary-button {
+    margin-top: 35px;
+}
+
+.help-content .page-title {
+    margin-bottom: 25px;
+}

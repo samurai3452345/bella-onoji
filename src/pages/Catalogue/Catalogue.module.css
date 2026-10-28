@@ -1,0 +1,110 @@
+.catalogue-title {
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: -1.2px;
+    margin: 0 0 30px;
+    font-weight: 750;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 22px;
+    margin: 40px -50px 22px 0;
+    padding: 0 20px 6px;
+    overflow: auto;
+    scrollbar-width: none;
+    flex-shrink: 0;
+}
+
+.category-tabs button {
+    font-size: 17px;
+    color: #9a9a9d;
+    min-height: 47px;
+    padding: 9px 0 16px;
+    position: relative;
+    flex-shrink: 0;
+    min-width: 61px;
+}
+
+.category-tabs button.active {
+    color: var(--orange);
+}
+
+.category-tabs button.active:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -12px;
+    right: -12px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 3px;
+    box-shadow: 0 4px 4px #c33f1519;
+}
+
+.catalogue-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.catalogue-section-heading > span {
+    font-size: 10px;
+    color: #999;
+    max-width: 160px;
+    line-height: 1.5;
+}
+
+.catalogue-section-heading button {
+    font-size: 14px;
+    color: var(--orange);
+    white-space: nowrap;
+    padding: 8px 0;
+}
+
+.food-carousel {
+    display: flex;
+    gap: 34px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd transparent;
+    padding: 65px 24px 55px 50px;
+    margin: 0 -50px 0 -50px;
+    flex-shrink: 0;
+}
+
+.catalogue-hint {
+    font-size: 12px;
+    color: #a3a3a7;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+@media (max-width: 390px) {
+    .category-tabs {
+        margin-right: -35px;
+        gap: 16px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .food-carousel {
+        margin-left: -35px;
+        margin-right: -35px;
+        padding-left: 35px;
+        gap: 25px;
+    }
+}
+
+.catalogue-title {
+    font-family: var(--app-rounded);
+}
+
+.catalogue-title {
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}

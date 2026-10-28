@@ -1,0 +1,61 @@
+.food-card {
+    position: relative;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px #39393912;
+    flex: 0 0 220px;
+    min-height: 270px;
+    scroll-snap-align: center;
+    text-align: center;
+    transition: transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 50px #3939391d;
+}
+
+.food-card > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 145px 20px 28px;
+    position: relative;
+}
+
+.food-card .food-image,
+.food-card .food-illustration {
+    position: absolute;
+    top: -50px;
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px #00000008;
+}
+
+.food-card h3 {
+    font-size: 22px;
+    line-height: 1.12;
+    letter-spacing: -0.7px;
+    max-width: 150px;
+    margin: 0 auto 20px;
+    font-weight: 600;
+}
+
+.food-card p {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--orange);
+    margin: auto 0 0;
+}
+
+.food-card h3 {
+    font-family: var(--app-rounded);
+}
+
+.food-card h3 {
+    font-weight: 700;
+}

@@ -1,0 +1,18 @@
+:root {
+    --orange: #fa4a0c;
+    --orange-dark: #d93600;
+    --ink: #252b42;
+    --muted: #737373;
+    --paper: #fff;
+    --app: #f5f5f8;
+    --line: #e4e4e8;
+    --radius: 30px;
+    --site-header-height: 117px;
+    --app-rounded: 'SF Pro Rounded', 'Nunito', 'Arial Rounded MT Bold', sans-serif;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --site-header-height: 84px;
+    }
+}

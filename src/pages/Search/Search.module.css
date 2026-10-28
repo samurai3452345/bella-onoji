@@ -1,0 +1,11 @@
+.results-title {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 35px 0 75px;
+    letter-spacing: -0.5px;
+}
+
+.search-page-input .food-search {
+    min-height: 52px;
+}

@@ -1,0 +1,151 @@
+.product-visual {
+    text-align: center;
+    margin: -10px -20px 25px;
+    overflow: hidden;
+}
+
+.product-visual .food-image,
+.product-visual .food-illustration {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    box-shadow: 0 20px 35px #00000008;
+    transition: transform 0.3s;
+}
+
+.product-visual .food-illustration > span {
+    font-size: 110px;
+}
+
+.product-photo.view-1 {
+    transform: scale(1.08);
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 0 10px;
+}
+
+.gallery-dots button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    background: #c4c4c4;
+    box-shadow: 0 0 0 7px transparent;
+}
+
+.gallery-dots button.active {
+    background: var(--orange);
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: -0.8px;
+    margin: 0 0 12px;
+}
+
+.product-price {
+    text-align: center;
+    color: var(--orange);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.product-copy {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #929296;
+}
+
+.product-copy > p:first-child {
+    margin-bottom: 24px;
+}
+
+.product-copy h2 {
+    font-size: 17px;
+    color: #111;
+    margin: 22px 0 8px;
+    font-weight: 600;
+}
+
+.product-copy p {
+    margin-bottom: 16px;
+}
+
+.view-cart-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    color: var(--orange);
+    font-size: 13px;
+}
+
+@media (max-width: 390px) {
+    .product-visual .food-image,
+    .product-visual .food-illustration {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 390px) {
+    .product-title {
+        font-size: 27px;
+    }
+}
+
+.product-title {
+    font-family: var(--app-rounded);
+}
+
+.product-title {
+    font-weight: 700;
+}
+
+.product-photo.view-1 {
+    transform: none;
+}
+
+.product-photo.view-1 > img {
+    transform: scale(1.16);
+}
+
+.product-photo.view-2 > img {
+    transform: scale(1.24) translateX(5%);
+}
+
+.product-photo.view-3 > img {
+    transform: scale(1.24) translateX(-5%);
+}
+
+.product-photo > img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-dots {
+    gap: 7px;
+    padding: 25px 0 10px;
+}
+
+.gallery-dots button {
+    width: 13px;
+    height: 13px;
+    border: 3px solid var(--app);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-photo > img {
+        transition: none;
+    }
+}
